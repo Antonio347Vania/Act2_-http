@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Empresa</title>
+    <!-- Enlace a Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            background-color: #f8f9fa; /* Color de fondo claro */
+        }
+        .navbar {
+            background-color: #6f42c1; /* Púrpura oscuro para la barra de navegación */
+        }
+        .navbar-brand, .nav-link {
+            color: #ffffff !important; /* Texto blanco en la barra de navegación */
+        }
+        .nav-link:hover {
+            color: #e9ecef !important; /* Blanco ligeramente más oscuro al pasar el ratón */
+        }
+        .footer {
+            background-color: #343a40; /* Gris oscuro para el pie de página */
+            color: #ffffff; /* Texto blanco en el pie de página */
+            padding: 20px 0;
+            margin-top: auto; /* Empuja el pie de página hacia abajo */
+        }
+        .content {
+            padding: 40px 0;
+            flex-grow: 1; /* Permite que el contenido crezca y empuje el footer */
+        }
+        .jumbotron {
+            background-color: #e0aaff; /* Púrpura claro para el jumbotron */
+            color: #333;
+            padding: 60px 0;
+            margin-bottom: 30px;
+            text-align: center;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Barra de Navegación -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Mi Empresa</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#productos">Productos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#empleados">Empleados</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contacto">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Contenido Principal -->
+    <div class="container content">
+        <div class="jumbotron">
+            <h1 class="display-4">Bienvenido a Mi Empresa Vania Antonio</h1>
+            <p class="lead">Explora nuestros productos innovadores y conoce a nuestro equipo dedicado.</p>
+            <hr class="my-4">
+            <p>Siempre buscando la excelencia para nuestros clientes.</p>
+        </div>
+
+        <section id="productos" class="mb-5">
+            <h2>Nuestros Productos</h2>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body">
+                            <h5 class="card-title">Producto Estrella 1</h5>
+                            <p class="card-text">Descripción breve del producto innovador con sus características principales.</p>
+                            <a href="#" class="btn btn-primary" style="background-color: #6f42c1; border-color: #6f42c1;">Ver Detalles</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body">
+                            <h5 class="card-title">Producto Nuevo 2</h5>
+                            <p class="card-text">Una descripción atractiva de nuestro más reciente lanzamiento.</p>
+                            <a href="#" class="btn btn-primary" style="background-color: #6f42c1; border-color: #6f42c1;">Ver Detalles</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body">
+                            <h5 class="card-title">Servicio Premium 3</h5>
+                            <p class="card-text">Conoce cómo nuestros servicios pueden transformar tu negocio.</p>
+                            <a href="#" class="btn btn-primary" style="background-color: #6f42c1; border-color: #6f42c1;">Ver Detalles</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="empleados" class="mb-5">
+            <h2>Nuestro Equipo</h2>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100 shadow-sm text-center">
+                         <!-- Aquí podrías poner una imagen de un empleado -->
+                        <div class="card-body">
+                            <h5 class="card-title">Juan Pérez</h5>
+                            <p class="card-text">CEO y Fundador. Visionario detrás de la empresa.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100 shadow-sm text-center">
+                         <!-- Aquí podrías poner una imagen de un empleado -->
+                        <div class="card-body">
+                            <h5 class="card-title">María García</h5>
+                            <p class="card-text">Directora de Marketing. Experta en estrategias digitales.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100 shadow-sm text-center">
+                         <!-- Aquí podrías poner una imagen de un empleado -->
+                        <div class="card-body">
+                            <h5 class="card-title">Carlos Rodríguez</h5>
+                            <p class="card-text">Jefe de Desarrollo. Lidera la innovación de productos.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contacto" class="mb-5 text-center">
+            <h2>Contáctanos</h2>
+            <p>¿Tienes alguna pregunta? No dudes en contactarnos.</p>
+            <button class="btn btn-lg btn-success" style="background-color: #28a745; border-color: #28a745;">Enviar Mensaje</button>
+        </section>
+
+    </div>
+
+    <!-- Pie de Página -->
+    <footer class="footer text-center">
+        <div class="container">
+            <p>&copy; <span id="currentYear"></span> Mi Empresa. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- Enlace a Bootstrap JS (Popper.js y Bootstrap JS) -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+    <script>
+        // Script para obtener el año actual dinámicamente
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
